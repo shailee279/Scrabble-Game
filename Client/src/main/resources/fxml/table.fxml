@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" prefHeight="825.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.view.table.TableController">
+ <top>
+  <GridPane prefHeight="50.0" prefWidth="1100.0" style="-fx-background-color: #031c30;" BorderPane.alignment="CENTER">
+   <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="999.0" minWidth="10.0" prefWidth="897.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="966.0" minWidth="10.0" prefWidth="103.0" />
+   </columnConstraints>
+   <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+    <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="562.0" style="-fx-background-color: #031c30;" GridPane.columnIndex="1">
+     <children>
+      <Button id="MinimizedBtn" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="50.0" maxWidth="68.0" minWidth="45.0" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/global.css">
+       <cursor>
+        <Cursor fx:constant="HAND" />
+       </cursor>
+      </Button>
+      <Button id="CloseBtn" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="50.0" maxWidth="68.0" minWidth="45.0" mnemonicParsing="false" onAction="#returnHall" prefHeight="50.0" prefWidth="51.0" stylesheets="@../css/global.css">
+       <cursor>
+        <Cursor fx:constant="HAND" />
+       </cursor>
+      </Button>
+     </children>
+    </HBox>
+    <Label fx:id="title" prefHeight="46.0" prefWidth="265.0" text="Table number X" textFill="#f89406">
+     <font>
+      <Font name="Algerian" size="32.0" />
+     </font>
+     <GridPane.margin>
+      <Insets left="20.0" />
+     </GridPane.margin></Label>
+   </children>
+  </GridPane>
+ </top>
+ <center>
+  <GridPane hgap="1.0" vgap="2.0" BorderPane.alignment="CENTER">
+   <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="a" GridPane.columnIndex="1" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="b" GridPane.columnIndex="2" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="c" GridPane.columnIndex="3" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="d" GridPane.columnIndex="4" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="e" GridPane.columnIndex="5" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="f" GridPane.columnIndex="6" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="g" GridPane.columnIndex="7" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="h" GridPane.columnIndex="8" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="i" GridPane.columnIndex="9" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="j" GridPane.columnIndex="10" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="k" GridPane.columnIndex="11" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="l" GridPane.columnIndex="12" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="m" GridPane.columnIndex="13" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="n" GridPane.columnIndex="14" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="o" GridPane.columnIndex="15" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="p" GridPane.columnIndex="16" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="q" GridPane.columnIndex="17" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="r" GridPane.columnIndex="18" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="s" GridPane.columnIndex="19" />
+    <Label alignment="CENTER" prefHeight="27.0" prefWidth="27.0" text="t" GridPane.columnIndex="20" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="1" GridPane.rowIndex="1" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="2" GridPane.rowIndex="2" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="3" GridPane.rowIndex="3" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="4" GridPane.rowIndex="4" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="5" GridPane.rowIndex="5" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="6" GridPane.rowIndex="6" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="7" GridPane.rowIndex="7" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="8" GridPane.rowIndex="8" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="9" GridPane.rowIndex="9" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="10" GridPane.rowIndex="10" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="11" GridPane.rowIndex="11" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="12" GridPane.rowIndex="12" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="13" GridPane.rowIndex="13" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="14" GridPane.rowIndex="14" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="15" GridPane.rowIndex="15" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="16" GridPane.rowIndex="16" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="17" GridPane.rowIndex="17" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="18" GridPane.rowIndex="18" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="19" GridPane.rowIndex="19" />
+    <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="20" GridPane.rowIndex="20" />
+    <!-- row 1 -->
+    <TextField fx:id="T0" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TextField fx:id="T1" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <TextField fx:id="T2" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <TextField fx:id="T3" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+    <TextField fx:id="T4" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+    <TextField fx:id="T5" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+    <TextField fx:id="T6" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+    <TextField fx:id="T7" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+    <TextField fx:id="T8" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+    <TextField fx:id="T9" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+    <TextField fx:id="T10" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+    <TextField fx:id="T11" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="1" />
+    <TextField fx:id="T12" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+    <TextField fx:id="T13" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="1" />
+    <TextField fx:id="T14" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+    <TextField fx:id="T15" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="1" />
+    <TextField fx:id="T16" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="1" />
+    <TextField fx:id="T17" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="1" />
+    <TextField fx:id="T18" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="1" />
+    <TextField fx:id="T19" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="1" />
+    <!-- row 2 -->
+    <TextField fx:id="T20" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <TextField fx:id="T21" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <TextField fx:id="T22" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+    <TextField fx:id="T23" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+    <TextField fx:id="T24" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+    <TextField fx:id="T25" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+    <TextField fx:id="T26" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+    <TextField fx:id="T27" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+    <TextField fx:id="T28" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+    <TextField fx:id="T29" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+    <TextField fx:id="T30" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+    <TextField fx:id="T31" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="2" />
+    <TextField fx:id="T32" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="2" />
+    <TextField fx:id="T33" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="2" />
+    <TextField fx:id="T34" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="2" />
+    <TextField fx:id="T35" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="2" />
+    <TextField fx:id="T36" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="2" />
+    <TextField fx:id="T37" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="2" />
+    <TextField fx:id="T38" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="2" />
+    <TextField fx:id="T39" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="2" />
+    <!-- row 3 -->
+    <TextField fx:id="T40" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <TextField fx:id="T41" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    <TextField fx:id="T42" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+    <TextField fx:id="T43" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+    <TextField fx:id="T44" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+    <TextField fx:id="T45" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+    <TextField fx:id="T46" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+    <TextField fx:id="T47" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+    <TextField fx:id="T48" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+    <TextField fx:id="T49" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+    <TextField fx:id="T50" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+    <TextField fx:id="T51" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="3" />
+    <TextField fx:id="T52" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="3" />
+    <TextField fx:id="T53" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="3" />
+    <TextField fx:id="T54" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="3" />
+    <TextField fx:id="T55" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="3" />
+    <TextField fx:id="T56" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="3" />
+    <TextField fx:id="T57" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="3" />
+    <TextField fx:id="T58" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="3" />
+    <TextField fx:id="T59" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="3" />
+    <!-- row 4 -->
+    <TextField fx:id="T60" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <TextField fx:id="T61" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+    <TextField fx:id="T62" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+    <TextField fx:id="T63" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+    <TextField fx:id="T64" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+    <TextField fx:id="T65" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+    <TextField fx:id="T66" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+    <TextField fx:id="T67" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+    <TextField fx:id="T68" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+    <TextField fx:id="T69" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+    <TextField fx:id="T70" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+    <TextField fx:id="T71" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="4" />
+    <TextField fx:id="T72" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="4" />
+    <TextField fx:id="T73" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="4" />
+    <TextField fx:id="T74" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="4" />
+    <TextField fx:id="T75" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="4" />
+    <TextField fx:id="T76" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="4" />
+    <TextField fx:id="T77" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="4" />
+    <TextField fx:id="T78" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="4" />
+    <TextField fx:id="T79" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="4" />
+    <!-- row 5 -->
+    <TextField fx:id="T80" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    <TextField fx:id="T81" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+    <TextField fx:id="T82" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+    <TextField fx:id="T83" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+    <TextField fx:id="T84" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+    <TextField fx:id="T85" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+    <TextField fx:id="T86" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+    <TextField fx:id="T87" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+    <TextField fx:id="T88" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+    <TextField fx:id="T89" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+    <TextField fx:id="T90" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+    <TextField fx:id="T91" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="5" />
+    <TextField fx:id="T92" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="5" />
+    <TextField fx:id="T93" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="5" />
+    <TextField fx:id="T94" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="5" />
+    <TextField fx:id="T95" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="5" />
+    <TextField fx:id="T96" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="5" />
+    <TextField fx:id="T97" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="5" />
+    <TextField fx:id="T98" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="5" />
+    <TextField fx:id="T99" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="5" />
+    <!-- row 6 -->
+    <TextField fx:id="T100" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    <TextField fx:id="T101" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+    <TextField fx:id="T102" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+    <TextField fx:id="T103" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+    <TextField fx:id="T104" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+    <TextField fx:id="T105" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+    <TextField fx:id="T106" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+    <TextField fx:id="T107" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+    <TextField fx:id="T108" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+    <TextField fx:id="T109" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+    <TextField fx:id="T110" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="6" />
+    <TextField fx:id="T111" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="6" />
+    <TextField fx:id="T112" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="6" />
+    <TextField fx:id="T113" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="6" />
+    <TextField fx:id="T114" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="6" />
+    <TextField fx:id="T115" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="6" />
+    <TextField fx:id="T116" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="6" />
+    <TextField fx:id="T117" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="6" />
+    <TextField fx:id="T118" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="6" />
+    <TextField fx:id="T119" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="6" />
+    <!-- row 7 -->
+    <TextField fx:id="T120" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+    <TextField fx:id="T121" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+    <TextField fx:id="T122" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+    <TextField fx:id="T123" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+    <TextField fx:id="T124" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+    <TextField fx:id="T125" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+    <TextField fx:id="T126" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+    <TextField fx:id="T127" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+    <TextField fx:id="T128" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+    <TextField fx:id="T129" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="7" />
+    <TextField fx:id="T130" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="7" />
+    <TextField fx:id="T131" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="7" />
+    <TextField fx:id="T132" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="7" />
+    <TextField fx:id="T133" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="7" />
+    <TextField fx:id="T134" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="7" />
+    <TextField fx:id="T135" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="7" />
+    <TextField fx:id="T136" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="7" />
+    <TextField fx:id="T137" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="7" />
+    <TextField fx:id="T138" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="7" />
+    <TextField fx:id="T139" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="7" />
+    <!-- row 8 -->
+    <TextField fx:id="T140" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+    <TextField fx:id="T141" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+    <TextField fx:id="T142" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+    <TextField fx:id="T143" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+    <TextField fx:id="T144" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+    <TextField fx:id="T145" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+    <TextField fx:id="T146" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+    <TextField fx:id="T147" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+    <TextField fx:id="T148" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+    <TextField fx:id="T149" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+    <TextField fx:id="T150" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+    <TextField fx:id="T151" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="8" />
+    <TextField fx:id="T152" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="8" />
+    <TextField fx:id="T153" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="8" />
+    <TextField fx:id="T154" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="8" />
+    <TextField fx:id="T155" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="8" />
+    <TextField fx:id="T156" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="8" />
+    <TextField fx:id="T157" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="8" />
+    <TextField fx:id="T158" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="8" />
+    <TextField fx:id="T159" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="8" />
+    <!-- row 9 -->
+    <TextField fx:id="T160" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+    <TextField fx:id="T161" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+    <TextField fx:id="T162" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+    <TextField fx:id="T163" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+    <TextField fx:id="T164" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+    <TextField fx:id="T165" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+    <TextField fx:id="T166" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+    <TextField fx:id="T167" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+    <TextField fx:id="T168" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+    <TextField fx:id="T169" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="9" />
+    <TextField fx:id="T170" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="9" />
+    <TextField fx:id="T171" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="9" />
+    <TextField fx:id="T172" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="9" />
+    <TextField fx:id="T173" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="9" />
+    <TextField fx:id="T174" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="9" />
+    <TextField fx:id="T175" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="9" />
+    <TextField fx:id="T176" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="9" />
+    <TextField fx:id="T177" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="9" />
+    <TextField fx:id="T178" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="9" />
+    <TextField fx:id="T179" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="9" />
+    <!-- row 10 -->
+    <TextField fx:id="T180" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+    <TextField fx:id="T181" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+    <TextField fx:id="T182" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+    <TextField fx:id="T183" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+    <TextField fx:id="T184" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+    <TextField fx:id="T185" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+    <TextField fx:id="T186" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="10" />
+    <TextField fx:id="T187" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="10" />
+    <TextField fx:id="T188" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="10" />
+    <TextField fx:id="T189" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="10" />
+    <TextField fx:id="T190" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="10" />
+    <TextField fx:id="T191" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="10" />
+    <TextField fx:id="T192" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="10" />
+    <TextField fx:id="T193" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="10" />
+    <TextField fx:id="T194" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="10" />
+    <TextField fx:id="T195" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="10" />
+    <TextField fx:id="T196" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="10" />
+    <TextField fx:id="T197" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="10" />
+    <TextField fx:id="T198" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="10" />
+    <TextField fx:id="T199" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="10" />
+    <!-- row 11 -->
+    <TextField fx:id="T200" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+    <TextField fx:id="T201" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+    <TextField fx:id="T202" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+    <TextField fx:id="T203" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+    <TextField fx:id="T204" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+    <TextField fx:id="T205" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+    <TextField fx:id="T206" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="11" />
+    <TextField fx:id="T207" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="11" />
+    <TextField fx:id="T208" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="11" />
+    <TextField fx:id="T209" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="11" />
+    <TextField fx:id="T210" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="11" />
+    <TextField fx:id="T211" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="11" />
+    <TextField fx:id="T212" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="11" />
+    <TextField fx:id="T213" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="11" />
+    <TextField fx:id="T214" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="11" />
+    <TextField fx:id="T215" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="11" />
+    <TextField fx:id="T216" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="11" />
+    <TextField fx:id="T217" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="11" />
+    <TextField fx:id="T218" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="11" />
+    <TextField fx:id="T219" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="11" />
+    <!-- row 12 -->
+    <TextField fx:id="T220" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+    <TextField fx:id="T221" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+    <TextField fx:id="T222" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+    <TextField fx:id="T223" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+    <TextField fx:id="T224" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+    <TextField fx:id="T225" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+    <TextField fx:id="T226" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="12" />
+    <TextField fx:id="T227" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="12" />
+    <TextField fx:id="T228" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="12" />
+    <TextField fx:id="T229" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="12" />
+    <TextField fx:id="T230" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="12" />
+    <TextField fx:id="T231" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="12" />
+    <TextField fx:id="T232" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="12" />
+    <TextField fx:id="T233" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="12" />
+    <TextField fx:id="T234" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="12" />
+    <TextField fx:id="T235" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="12" />
+    <TextField fx:id="T236" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="12" />
+    <TextField fx:id="T237" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="12" />
+    <TextField fx:id="T238" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="12" />
+    <TextField fx:id="T239" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="12" />
+    <!-- row 13 -->
+    <TextField fx:id="T240" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+    <TextField fx:id="T241" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+    <TextField fx:id="T242" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+    <TextField fx:id="T243" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+    <TextField fx:id="T244" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+    <TextField fx:id="T245" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+    <TextField fx:id="T246" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="13" />
+    <TextField fx:id="T247" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="13" />
+    <TextField fx:id="T248" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="13" />
+    <TextField fx:id="T249" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="13" />
+    <TextField fx:id="T250" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="13" />
+    <TextField fx:id="T251" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="13" />
+    <TextField fx:id="T252" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="13" />
+    <TextField fx:id="T253" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="13" />
+    <TextField fx:id="T254" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="13" />
+    <TextField fx:id="T255" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="13" />
+    <TextField fx:id="T256" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="13" />
+    <TextField fx:id="T257" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="13" />
+    <TextField fx:id="T258" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="13" />
+    <TextField fx:id="T259" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="13" />
+    <!-- row 14 -->
+    <TextField fx:id="T260" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+    <TextField fx:id="T261" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+    <TextField fx:id="T262" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+    <TextField fx:id="T263" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="14" />
+    <TextField fx:id="T264" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+    <TextField fx:id="T265" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+    <TextField fx:id="T266" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="14" />
+    <TextField fx:id="T267" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="14" />
+    <TextField fx:id="T268" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="14" />
+    <TextField fx:id="T269" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="14" />
+    <TextField fx:id="T270" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="14" />
+    <TextField fx:id="T271" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="14" />
+    <TextField fx:id="T272" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="14" />
+    <TextField fx:id="T273" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="14" />
+    <TextField fx:id="T274" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="14" />
+    <TextField fx:id="T275" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="14" />
+    <TextField fx:id="T276" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="14" />
+    <TextField fx:id="T277" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="14" />
+    <TextField fx:id="T278" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="14" />
+    <TextField fx:id="T279" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="14" />
+    <!-- row 15 -->
+    <TextField fx:id="T280" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+    <TextField fx:id="T281" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+    <TextField fx:id="T282" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+    <TextField fx:id="T283" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="15" />
+    <TextField fx:id="T284" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="15" />
+    <TextField fx:id="T285" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="15" />
+    <TextField fx:id="T286" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="15" />
+    <TextField fx:id="T287" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="15" />
+    <TextField fx:id="T288" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="15" />
+    <TextField fx:id="T289" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="15" />
+    <TextField fx:id="T290" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="15" />
+    <TextField fx:id="T291" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="15" />
+    <TextField fx:id="T292" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="15" />
+    <TextField fx:id="T293" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="15" />
+    <TextField fx:id="T294" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="15" />
+    <TextField fx:id="T295" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="15" />
+    <TextField fx:id="T296" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="15" />
+    <TextField fx:id="T297" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="15" />
+    <TextField fx:id="T298" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="15" />
+    <TextField fx:id="T299" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="15" />
+    <!-- row 16 -->
+    <TextField fx:id="T300" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+    <TextField fx:id="T301" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+    <TextField fx:id="T302" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+    <TextField fx:id="T303" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="16" />
+    <TextField fx:id="T304" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+    <TextField fx:id="T305" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="16" />
+    <TextField fx:id="T306" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="16" />
+    <TextField fx:id="T307" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="16" />
+    <TextField fx:id="T308" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="16" />
+    <TextField fx:id="T309" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="16" />
+    <TextField fx:id="T310" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="16" />
+    <TextField fx:id="T311" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="16" />
+    <TextField fx:id="T312" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="16" />
+    <TextField fx:id="T313" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="16" />
+    <TextField fx:id="T314" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="16" />
+    <TextField fx:id="T315" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="16" />
+    <TextField fx:id="T316" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="16" />
+    <TextField fx:id="T317" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="16" />
+    <TextField fx:id="T318" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="16" />
+    <TextField fx:id="T319" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="16" />
+    <!-- row 17 -->
+    <TextField fx:id="T320" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+    <TextField fx:id="T321" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+    <TextField fx:id="T322" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="17" />
+    <TextField fx:id="T323" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="17" />
+    <TextField fx:id="T324" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="17" />
+    <TextField fx:id="T325" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="17" />
+    <TextField fx:id="T326" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="17" />
+    <TextField fx:id="T327" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="17" />
+    <TextField fx:id="T328" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="17" />
+    <TextField fx:id="T329" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="17" />
+    <TextField fx:id="T330" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="17" />
+    <TextField fx:id="T331" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="17" />
+    <TextField fx:id="T332" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="17" />
+    <TextField fx:id="T333" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="17" />
+    <TextField fx:id="T334" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="17" />
+    <TextField fx:id="T335" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="17" />
+    <TextField fx:id="T336" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="17" />
+    <TextField fx:id="T337" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="17" />
+    <TextField fx:id="T338" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="17" />
+    <TextField fx:id="T339" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="17" />
+    <!-- row 18 -->
+    <TextField fx:id="T340" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+    <TextField fx:id="T341" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="18" />
+    <TextField fx:id="T342" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="18" />
+    <TextField fx:id="T343" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="18" />
+    <TextField fx:id="T344" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="18" />
+    <TextField fx:id="T345" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="18" />
+    <TextField fx:id="T346" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="18" />
+    <TextField fx:id="T347" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="18" />
+    <TextField fx:id="T348" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="18" />
+    <TextField fx:id="T349" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="18" />
+    <TextField fx:id="T350" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="18" />
+    <TextField fx:id="T351" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="18" />
+    <TextField fx:id="T352" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="18" />
+    <TextField fx:id="T353" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="18" />
+    <TextField fx:id="T354" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="18" />
+    <TextField fx:id="T355" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="18" />
+    <TextField fx:id="T356" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="18" />
+    <TextField fx:id="T357" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="18" />
+    <TextField fx:id="T358" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="18" />
+    <TextField fx:id="T359" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="18" />
+    <!-- row 19 -->
+    <TextField fx:id="T360" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+    <TextField fx:id="T361" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="19" />
+    <TextField fx:id="T362" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="19" />
+    <TextField fx:id="T363" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="19" />
+    <TextField fx:id="T364" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="19" />
+    <TextField fx:id="T365" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="19" />
+    <TextField fx:id="T366" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="19" />
+    <TextField fx:id="T367" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="19" />
+    <TextField fx:id="T368" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="19" />
+    <TextField fx:id="T369" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="19" />
+    <TextField fx:id="T370" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="19" />
+    <TextField fx:id="T371" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="19" />
+    <TextField fx:id="T372" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="19" />
+    <TextField fx:id="T373" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="19" />
+    <TextField fx:id="T374" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="19" />
+    <TextField fx:id="T375" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="19" />
+    <TextField fx:id="T376" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="19" />
+    <TextField fx:id="T377" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="19" />
+    <TextField fx:id="T378" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="19" />
+    <TextField fx:id="T379" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="19" />
+    <!-- row 20 -->
+    <TextField fx:id="T380" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+    <TextField fx:id="T381" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="2" GridPane.rowIndex="20" />
+    <TextField fx:id="T382" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="3" GridPane.rowIndex="20" />
+    <TextField fx:id="T383" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="4" GridPane.rowIndex="20" />
+    <TextField fx:id="T384" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="5" GridPane.rowIndex="20" />
+    <TextField fx:id="T385" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="6" GridPane.rowIndex="20" />
+    <TextField fx:id="T386" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="7" GridPane.rowIndex="20" />
+    <TextField fx:id="T387" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="8" GridPane.rowIndex="20" />
+    <TextField fx:id="T388" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="9" GridPane.rowIndex="20" />
+    <TextField fx:id="T389" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="10" GridPane.rowIndex="20" />
+    <TextField fx:id="T390" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="11" GridPane.rowIndex="20" />
+    <TextField fx:id="T391" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="12" GridPane.rowIndex="20" />
+    <TextField fx:id="T392" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="13" GridPane.rowIndex="20" />
+    <TextField fx:id="T393" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="14" GridPane.rowIndex="20" />
+    <TextField fx:id="T394" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="15" GridPane.rowIndex="20" />
+    <TextField fx:id="T395" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="16" GridPane.rowIndex="20" />
+    <TextField fx:id="T396" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="17" GridPane.rowIndex="20" />
+    <TextField fx:id="T397" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="18" GridPane.rowIndex="20" />
+    <TextField fx:id="T398" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="19" GridPane.rowIndex="20" />
+    <TextField fx:id="T399" editable="false" stylesheets="@../css/global.css" GridPane.columnIndex="20" GridPane.rowIndex="20" />
+
+
+   </children>
+   <BorderPane.margin>
+    <Insets bottom="5.0" top="5.0" />
+   </BorderPane.margin>
+  </GridPane>
+ </center>
+ <left>
+  <VBox prefHeight="550.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+   <children>
+    <SplitPane dividerPositions="0.25, 0.5, 0.75" orientation="VERTICAL" prefHeight="556.0" prefWidth="200.0" snapToPixel="false">
+     <items>
+      <VBox minHeight="0.0" minWidth="0.0" prefHeight="73.0" prefWidth="98.0">
+       <children>
+        <Label fx:id="player1Name" prefHeight="46.0" prefWidth="147.0" text="Player 1 name">
+         <VBox.margin>
+          <Insets left="10.0" />
+         </VBox.margin>
+         <font>
+          <Font name="System Bold" size="16.0" />
+         </font>
+        </Label>
+        <HBox prefHeight="50.0" prefWidth="173.0">
+         <children>
+          <Label text="Score:">
+           <HBox.margin>
+            <Insets left="10.0" right="10.0" top="15.0" />
+           </HBox.margin>
+          </Label>
+          <Label fx:id="player1Score" text="21">
+           <HBox.margin>
+            <Insets top="10.0" />
+           </HBox.margin>
+           <font>
+            <Font size="23.0" />
+           </font>
+          </Label>
+         </children>
+        </HBox>
+        <HBox prefHeight="40.0" prefWidth="173.0">
+         <children>
+          <Label fx:id="player1Ready" alignment="CENTER" prefHeight="38.0" prefWidth="110.0" text="READY" textFill="#f89406">
+           <font>
+            <Font name="System Bold" size="20.0" />
+           </font>
+          </Label>
+          <ImageView fx:id="player1Turn" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+           <HBox.margin>
+            <Insets left="30.0" top="5.0" />
+           </HBox.margin>
+          </ImageView>
+         </children></HBox>
+       </children></VBox>
+      <VBox minHeight="0.0" minWidth="0.0" prefHeight="162.0" prefWidth="98.0">
+       <children>
+        <Label fx:id="player2Name" prefHeight="46.0" prefWidth="147.0" text="Player 2 name">
+         <VBox.margin>
+          <Insets left="10.0" />
+         </VBox.margin>
+         <font>
+          <Font name="System Bold" size="16.0" />
+         </font>
+        </Label>
+        <HBox prefHeight="50.0" prefWidth="173.0">
+         <children>
+          <Label text="Score:">
+           <HBox.margin>
+            <Insets left="10.0" right="10.0" top="15.0" />
+           </HBox.margin>
+          </Label>
+          <Label fx:id="player2Score" text="21">
+           <HBox.margin>
+            <Insets top="10.0" />
+           </HBox.margin>
+           <font>
+            <Font size="23.0" />
+           </font>
+          </Label>
+         </children>
+        </HBox>
+        <HBox prefHeight="40.0" prefWidth="173.0">
+         <children>
+          <Label fx:id="player2Ready" alignment="CENTER" prefHeight="38.0" prefWidth="110.0" text="READY" textFill="#f89406">
+           <font>
+            <Font name="System Bold" size="20.0" />
+           </font>
+          </Label>
+          <ImageView fx:id="player2Turn" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+           <HBox.margin>
+            <Insets left="30.0" top="5.0" />
+           </HBox.margin>
+          </ImageView>
+         </children></HBox>
+       </children></VBox>
+      <VBox layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="157.0" prefWidth="98.0">
+       <children>
+        <Label fx:id="player3Name" prefHeight="46.0" prefWidth="147.0" text="Player 3 name">
+         <VBox.margin>
+          <Insets left="10.0" />
+         </VBox.margin>
+         <font>
+          <Font name="System Bold" size="16.0" />
+         </font>
+        </Label>
+        <HBox prefHeight="50.0" prefWidth="173.0">
+         <children>
+          <Label text="Score:">
+           <HBox.margin>
+            <Insets left="10.0" right="10.0" top="15.0" />
+           </HBox.margin>
+          </Label>
+          <Label fx:id="player3Score" text="21">
+           <HBox.margin>
+            <Insets top="10.0" />
+           </HBox.margin>
+           <font>
+            <Font size="23.0" />
+           </font>
+          </Label>
+         </children>
+        </HBox>
+        <HBox prefHeight="40.0" prefWidth="173.0">
+         <children>
+          <Label fx:id="player3Ready" alignment="CENTER" prefHeight="38.0" prefWidth="110.0" text="READY" textFill="#f89406">
+           <font>
+            <Font name="System Bold" size="20.0" />
+           </font>
+          </Label>
+          <ImageView fx:id="player3Turn" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+           <HBox.margin>
+            <Insets left="30.0" top="5.0" />
+           </HBox.margin>
+          </ImageView>
+         </children></HBox>
+       </children></VBox>
+      <VBox layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="99.0" prefWidth="198.0">
+       <children>
+        <Label fx:id="player4Name" prefHeight="46.0" prefWidth="147.0" text="Player 4 name">
+         <VBox.margin>
+          <Insets left="10.0" />
+         </VBox.margin>
+         <font>
+          <Font name="System Bold" size="16.0" />
+         </font>
+        </Label>
+        <HBox prefHeight="50.0" prefWidth="173.0">
+         <children>
+          <Label text="Score:">
+           <HBox.margin>
+            <Insets left="10.0" right="10.0" top="15.0" />
+           </HBox.margin>
+          </Label>
+          <Label fx:id="player4Score" text="21">
+           <HBox.margin>
+            <Insets top="10.0" />
+           </HBox.margin>
+           <font>
+            <Font size="23.0" />
+           </font>
+          </Label>
+         </children>
+        </HBox>
+        <HBox prefHeight="40.0" prefWidth="173.0">
+         <children>
+          <Label fx:id="player4Ready" alignment="CENTER" prefHeight="38.0" prefWidth="110.0" text="READY" textFill="#f89406">
+           <font>
+            <Font name="System Bold" size="20.0" />
+           </font>
+          </Label>
+          <ImageView fx:id="player4Turn" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+           <HBox.margin>
+            <Insets left="30.0" top="5.0" />
+           </HBox.margin>
+          </ImageView>
+         </children></HBox>
+       </children></VBox>
+     </items>
+    </SplitPane>
+   </children>
+   <padding>
+    <Insets left="15.0" right="10.0" top="50.0" />
+   </padding></VBox>
+ </left>
+ <right>
+  <VBox prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+   <children>
+    <Button mnemonicParsing="false" onAction="#help" prefHeight="45.0" prefWidth="170.0" styleClass="radiusBtn" stylesheets="@../css/global.css" text="Help">
+     <VBox.margin>
+      <Insets left="15.0" top="20.0" />
+     </VBox.margin>
+    </Button>
+    <Button layoutX="25.0" layoutY="301.0" mnemonicParsing="false" onAction="#returnHall" prefHeight="45.0" prefWidth="170.0" styleClass="radiusBtn" stylesheets="@../css/global.css" text="Give Up">
+     <VBox.margin>
+      <Insets left="15.0" top="20.0" />
+     </VBox.margin>
+    </Button>
+   </children>
+   <padding>
+    <Insets top="30.0" />
+   </padding>
+  </VBox>
+ </right>
+ <bottom>
+  <VBox prefHeight="122.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+   <children>
+    <HBox fx:id="tileBox" prefHeight="57.0" prefWidth="1100.0">
+     <children>
+      <Button fx:id="A" mnemonicParsing="false" text="A" />
+      <Button fx:id="B" mnemonicParsing="false" text="B" />
+      <Button fx:id="C" mnemonicParsing="false" text="C" />
+      <Button fx:id="D" mnemonicParsing="false" text="D" />
+      <Button fx:id="E" mnemonicParsing="false" text="E" />
+      <Button fx:id="F" mnemonicParsing="false" text="F" />
+      <Button fx:id="G" mnemonicParsing="false" text="G" />
+      <Button fx:id="H" mnemonicParsing="false" text="H" />
+      <Button fx:id="I" mnemonicParsing="false" text="I" />
+      <Button fx:id="J" mnemonicParsing="false" text="J" />
+      <Button fx:id="K" mnemonicParsing="false" text="K" />
+      <Button fx:id="L" mnemonicParsing="false" text="L" />
+      <Button fx:id="M" mnemonicParsing="false" text="M" />
+      <Button fx:id="N" mnemonicParsing="false" text="N" />
+      <Button fx:id="O" mnemonicParsing="false" text="O" />
+      <Button fx:id="P" mnemonicParsing="false" text="P" />
+      <Button fx:id="Q" mnemonicParsing="false" text="Q" />
+      <Button fx:id="R" mnemonicParsing="false" text="R" />
+      <Button fx:id="S" mnemonicParsing="false" text="S" />
+      <Button fx:id="T" mnemonicParsing="false" text="T" />
+      <Button fx:id="U" mnemonicParsing="false" text="U" />
+      <Button fx:id="V" mnemonicParsing="false" text="V" />
+      <Button fx:id="W" mnemonicParsing="false" text="W" />
+      <Button fx:id="X" mnemonicParsing="false" text="X" />
+      <Button fx:id="Y" mnemonicParsing="false" text="Y" />
+      <Button fx:id="Z" mnemonicParsing="false" text="Z" />
+
+
+
+     </children>
+     <padding>
+      <Insets left="50.0" />
+     </padding>
+    </HBox>
+    <HBox fx:id="buttonBox" prefHeight="100.0" prefWidth="200.0">
+     <children>
+      <BorderPane fx:id="controllerBox" prefHeight="83.0" prefWidth="641.0">
+                     <right>
+                        <Label fx:id="label" text="Not Your Turn !" textFill="#f89406" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="44.0" />
+                           </font></Label>
+                     </right></BorderPane>
+      <HBox prefHeight="81.0" prefWidth="967.0">
+       <children>
+        <Button fx:id="confirmBtn" mnemonicParsing="false" onAction="#confirm" prefHeight="50.0" prefWidth="150.0" styleClass="radiusBtn" stylesheets="@../css/global.css" text="Confirm">
+                           <HBox.margin>
+                              <Insets left="50.0" right="50.0" top="15.0" />
+                           </HBox.margin></Button>
+        <Button fx:id="clearBtn" mnemonicParsing="false" onAction="#clearBtnAction" prefHeight="50.0" prefWidth="150.0" styleClass="radiusBtn" stylesheets="@../css/global.css" text="Clear">
+                           <HBox.margin>
+                              <Insets left="50.0" right="50.0" top="15.0" />
+                           </HBox.margin></Button>
+        <Button fx:id="passBtn" mnemonicParsing="false" onAction="#pass" prefHeight="50.0" prefWidth="150.0" styleClass="radiusBtn" stylesheets="@../css/global.css" text="Pass">
+                           <HBox.margin>
+                              <Insets left="50.0" top="15.0" />
+                           </HBox.margin></Button>
+       </children>
+      </HBox>
+      <BorderPane prefHeight="83.0" prefWidth="350.0" />
+     </children>
+    </HBox>
+   </children>
+  </VBox>
+ </bottom>
+</BorderPane>

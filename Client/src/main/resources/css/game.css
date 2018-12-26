@@ -1,0 +1,28 @@
+.letterBox {
+    -fx-background-color: #e3e3e3;
+    -fx-border-color: black;
+}
+.containerBox{
+    -fx-background-color: #e3e3e3;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 3px;
+    -fx-border-color: gray;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+}
+.TripleWord{
+    -fx-background-color: rgb(255,104,82);
+}
+.TripleLetter{
+-fx-background-color: rgb(63,160,180);
+}
+.DoubleWord{
+    -fx-background-color: rgb(252,191,173);
+}
+.DoubleLetter{
+    -fx-background-color: rgb(196,218,212);
+}
+.None{
+    -fx-background-color: rgb(204,197,169);
+}
+

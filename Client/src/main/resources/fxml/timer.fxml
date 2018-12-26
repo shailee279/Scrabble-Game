@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" prefHeight="825.0" prefWidth="1100.0" style="-fx-background-color: rgba(255,255,255,.5);" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.view.table.TimerController">
+    <right>
+        <Pane prefHeight="775.0" prefWidth="350.0" BorderPane.alignment="CENTER" />
+    </right>
+    <left>
+        <Pane prefHeight="775.0" prefWidth="350.0" BorderPane.alignment="CENTER" />
+    </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="59.0" prefWidth="400.0" text="Game will start in :">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="250.0" />
+               </VBox.margin></Label>
+            <Label fx:id="number" alignment="CENTER" prefHeight="167.0" prefWidth="400.0" text="3" textFill="#f89406">
+               <font>
+                  <Font name="System Bold" size="96.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

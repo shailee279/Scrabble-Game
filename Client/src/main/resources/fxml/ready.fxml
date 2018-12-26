@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" prefHeight="825.0" prefWidth="1100.0" style="-fx-background-color: rgba(255,255,255,.5);" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.view.table.ReadyController">
+   <top>
+      <GridPane prefHeight="50.0" prefWidth="1100.0" style="-fx-background-color: #031c30;" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="999.0" minWidth="10.0" prefWidth="897.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="966.0" minWidth="10.0" prefWidth="103.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="562.0" style="-fx-background-color: #031c30;" GridPane.columnIndex="1">
+               <children>
+                  <Button id="MinimizedBtn" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="50.0" maxWidth="68.0" minWidth="45.0" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/global.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="CloseBtn" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="50.0" maxWidth="68.0" minWidth="45.0" mnemonicParsing="false" onAction="#returnHall" prefHeight="50.0" prefWidth="51.0" stylesheets="@../css/global.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="title" prefHeight="46.0" prefWidth="265.0" text="Table number X" textFill="#f89406">
+               <font>
+                  <Font name="Algerian" size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin></Label>
+         </children>
+      </GridPane>
+   </top>
+   <center>
+      <VBox fx:id="vBox" prefHeight="200.0" prefWidth="896.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#ready" prefHeight="60.0" prefWidth="150.0" styleClass="radiusBtn" stylesheets="@../css/global.css" text="READY">
+               <VBox.margin>
+                  <Insets left="125.0" />
+               </VBox.margin></Button>
+            <Button fx:id="inviteBtn" layoutX="135.0" layoutY="310.0" mnemonicParsing="false" onAction="#invite" prefHeight="60.0" prefWidth="150.0" styleClass="radiusBtn" stylesheets="@../css/global.css" text="INVITE">
+               <VBox.margin>
+                  <Insets left="125.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <ListView fx:id="inviteList" prefHeight="200.0" prefWidth="400.0">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="40.0" />
+               </VBox.margin></ListView>
+            <HBox fx:id="inviteBox" prefHeight="100.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="31.0" prefWidth="71.0" text="Invite: ">
+                     <HBox.margin>
+                        <Insets left="20.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="playerName" layoutX="30.0" layoutY="40.0" prefHeight="31.0" prefWidth="159.0" text="PlayerName">
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#confirm" prefHeight="42.0" prefWidth="106.0" style="-fx-font-size: 15px bold" styleClass="radiusBtn" stylesheets="@../css/global.css" text="Confirm">
+                     <HBox.margin>
+                        <Insets left="10.0" top="25.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="300.0" />
+         </padding>
+      </VBox>
+   </center>
+   <right>
+      <Pane prefHeight="775.0" prefWidth="350.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <Pane prefHeight="775.0" prefWidth="350.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
